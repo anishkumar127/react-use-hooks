@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import CopyToClipBoard from "./components/CopyToClipBoard";
+import ArrayList from "./components/ArrayList";
+import KeyPress from "./components/KeyPress";
+import BreakPoints from "./components/BreakPoints";
+import LocalStorage from "./components/LocalStorage";
+import SessionStorage from "./components/SessionStorage";
+import CookieStorage from "./components/CookieStorage";
+import BatteryStatus from "./components/BatteryStatus";
+import NetworkStatus from "./components/NetworkStatus";
+import GeoLocation from "./components/GeoLocation";
+import OtherHooks from "./components/OtherHooks";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <ArrayList /> */}
+
+      {/* <KeyPress /> */}
+      {/* <CopyToClipBoard /> */}
+      {/* <BreakPoints /> */}
+      {/* <LocalStorage /> */}
+      {/* <SessionStorage /> */}
+      {/* <CookieStorage /> */}
+      {/* <BatteryStatus /> */}
+      {/* <NetworkStatus /> */}
+      {/* <GeoLocation /> */}
+      <OtherHooks />
+    </>
   );
-}
+};
 
 export default App;

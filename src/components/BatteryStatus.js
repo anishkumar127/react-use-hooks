@@ -1,0 +1,14 @@
+import React from "react";
+import { useBattery } from "react-use";
+const BatteryStatus = () => {
+  const batteryStatus = useBattery();
+  return (
+    <div>
+      BatteryStatus
+      <h2>Battery Level : {(batteryStatus.level * 100).toFixed(0)}</h2>
+      <h3>Battery Status Charging : {batteryStatus.charging ? "Yes" : "No"}</h3>
+    </div>
+  );
+};
+
+export default BatteryStatus;
